@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.web{
+    height: 100vh;
+    /* background-color: #2d98da; */
+    background-image: url(gambar/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    padding: 10px 30px;
+    height: 8%;
+    /* background-color: red; */
+    /* border-bottom: 1px solid white; */
+}
+.navbar-logo img{
+    height: 50px;
+}
+.navbar-link{
+    flex: 1;
+}
+.navbar-link ul{
+    margin-left: 50px;
+    display: inline;
+}
+.navbar-link ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 30px;
+}
+.navbar-link ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.navbar-link ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #3867d6;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar-link ul li:hover::after{
+    width: 100%;
+}
+/* #btn2{
+    padding: 10px 20px;
+    border: 0;
+    background-color: transparent;
+    color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+} */
+.navbar-link .btn-kanan{
+    float: right;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: fit-content;
+}
+#btn1{
+    padding: 10px 20px;
+    border: 0;
+    background-color: #3867d6;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btn1:hover{
+    background-color: white;
+    color: #3867d6;
+}
+.navbar-link .fa-shopping-cart{
+    float: right;
+    font-size: 30px;
+    color: white;
+    margin-top: 2px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.navbar #open, .navbar #close{
+    display: none;
+}
+
+
+/* CONTENT */
+.content{
+    width: 100%;
+    height: 85%;
+    /* border: 2px solid white; */
+    display: flex;
+}
+.content-kiri{
+    width: 50%;
+    height: 100%;
+    /* background-color: white; */
+}
+.kiri-atas{
+    width: 100%;
+    height: 60%;
+    /* background-color: tomato; */
+    margin: 0;
+}
+.kiri-atas h1{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36pt;
+    font-weight: 400;
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 0;
+}
+.kiri-atas h2{
+    color: white;
+    font-size: 48pt;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.kiri-atas h2 span{
+    color: #3867d6;
+}
+.kiri-atas p{
+    width: 60%;
+    color: white;
+    font-size: 12pt;
+    font-weight: 300;
+    margin-left: 10%;
+    margin-top: 30px;
+    text-align: justify;
+}
+.kiri-bawah{
+    width: 100%;
+    height: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    margin: 0;
+}
+.kiri-bawah h3{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24pt;
+    font-weight: 400;
+    padding-top: 13%;
+    margin-left: 10%;
+    margin-bottom: 0;
+}
+.kiri-bawah button{
+    padding: 0 10px;
+    height: 30px;
+    margin-top: 14.5%;
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.kiri-bawah button a{
+    text-decoration: none;
+    color: white;
+}
+.kiri-bawah button:hover{
+    color: white;
+    background-color: #4b7bec;
+}
+
+
+.content-kanan{
+    width: 50%;
+    height: 100%;
+    /* background-color: violet; */
+}
+.content-kanan .kanan-atas{
+    width: 100%;
+    height: 70%;
+    /* background-color: violet; */
+    margin: 0;
+    text-align: right;
+    justify-content: right;
+}
+.content-kanan .kanan-atas .fa-quote-right{
+    font-size: 50px;
+    color: white;
+    opacity: 50%;
+    transform: rotateY(180deg);
+    margin-top: 10%;
+    margin-right: 45%;
+}
+.content-kanan .kanan-atas p{
+    width: 200px;
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 55%;
+    text-align: left;
+}
+.content-kanan .kanan-atas .fa-quote-left{
+    font-size: 50px;
+    color: white;
+    opacity: 50%;
+    transform: rotateY(180deg);
+    margin-right: 10%;
+}
+.content-kanan .kanan-atas #quoter{
+    margin-left: 65%;
+}
+.content-kanan .kanan-bawah{
+    width: 100%;
+    height: 30%;
+    /* background-color: khaki; */
+    margin: 0;
+    text-align: right;
+    justify-content: right;
+    display: inline-block;
+}
+.content-kanan .kanan-bawah .fa{
+    font-size: 20px;
+    color: white;
+    margin-top: 4%;
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.content-kanan .kanan-bawah .fa-twitter-square{
+    margin-right: 10%;
+}
+
+
+
+@media (max-width: 500px){
+    .navbar{
+        padding: 10px 20px;
+    }
+    .navbar-logo img{
+        width: 80px;
+        margin-left: 10px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 0;
+        top: 5px;
+    }
+    .navbar #open, .navbar #close{
+        display: block;
+        color: white;
+        margin: 10px 30px;
+        font-size: 18pt;
+        cursor: pointer;
+    }
+    .navbar-link{
+        height: 100vh;
+        width: 200px;
+        background-color: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    .navbar-link #close{
+        margin-bottom: 10px;
+    }
+    .navbar-link ul li{
+        padding: 5px 30px;
+    }
+    .navbar-link ul a{
+        display: block;
+    }
+    .navbar-link .btn-kanan{
+        float: none;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .navbar-link .fa-shopping-cart{
+        float: none;
+        display: block;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}

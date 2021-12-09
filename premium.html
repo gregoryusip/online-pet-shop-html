@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>VETSHOP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="premiumst.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- <script src="javascript.js"></script> -->
+    </head>
+    <body>
+        <div class="web">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <a href="homepage.html"><img src="gambar/logo331.png"></a>
+                </div>
+                <div class="navbar-link" id="navbar-link">
+                    <i class="fa fa-close" id="close" onclick="closeMenu()"></i>
+                    <ul>
+                        <a href="homepage.html"><li>HOME</li></a>
+                        <a href="shop.html"><li>SHOP</li></a>
+                        <a href="service.html"><li>SERVICE</li></a>
+                        <a href="premium.html"><li>PREMIUM</li></a>
+                    </ul>
+                    <div class="btn-kanan">
+                        <a href="login.html"><button type="button" class="btn" id="btn1">LOG IN</button></a>
+                        <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <!-- <button type="button" class="btn" id="btn2">SIGN UP</button> -->
+                </div>
+                <i class="fa fa-bars" id="open" onclick="openMenu()"></i>
+            </div>
+
+            <div class="halaman-premium">
+                <div class="box-premium">
+                    <div class="box-kiri">
+                        <img src="gambar/dog-photography-by-andrew-sproule-labradoodle-kent.jpg">
+                    </div>
+                    <div class="box-kanan">
+                        <h1>PREMIUM<br>MEMBER</h1>
+                        <p class="p-keuntungan">
+                            <b>#StayAtHome Package</b><br>
+                            Keuntungan menjadi <b>PREMIUM MEMBER</b>:</p>
+                        <p><b>1.</b> Konsultasi dengan dokter hewan s.d. 1 jam<br>
+                            <b>2.</b> Potongan harga untuk layanan <i>Service</i><br>
+                            <b>3.</b> Promo harga untuk berbagai produk pilihan<br>
+                        </p>
+                        <p class="p-harga">Rp 20.000/bln</p>
+                        <p class="p-bergabung">Belum bergabung dengan <b>PREMIUM MEMBER</b>?</p>
+                        <div class="btn-premium">
+                            <input type="submit" name="" value="Bergabung!">
+                            <input type="submit" class="btn-nanti" value="Nanti Saja">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="kolom">
+                    <div class="atas">
+                        <h2>VETSHOP</h2>
+                        <p>Tentang VETSHOP</p>
+                        <p>Cara Kerja</p>
+                        <p>Syarat dan Ketentuan</p>
+                        <p>Kebijakan Privasi</p>
+                        <p>Keamanan</p>
+                    </div>
+                    <div class="bawah">
+                        <h2>Ikuti Kami</h2>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                    </div>
+                </div>
+                <div class="kolom">
+                    <div class="atas">
+                        <h2>Beli</h2>
+                        <p>Makanan Hewan</p>
+                        <p>Baju Hewan</p>
+                        <p>Obat Hewan</p>
+                        <p>Rumah Hewan</p>
+                        <p>Lainnya</p>
+                    </div>
+                    <div class="bawah">
+                        <h2>Jasa</h2>
+                        <p>Konsultasi Dokter Hewan</p>
+                        <p>Salon Hewan</p>
+                        <p>Penitipan Hewan</p>
+                        <p>Pelatihan Hewan</p>
+                    </div>
+                </div>
+                <div class="kolom">
+                    <div class="atas">
+                        <h2>Unduh Aplikasi VETSHOP</h2>
+                        <div class="unduh-store">
+                            <div class="s-1">
+                                <div class="s-logo">
+                                    <img src="gambar/Unduh/014-playstore.png">
+                                </div>
+                                <div class="s-1-btn">
+                                    <a href="#"><span>UNDUH</span></a>
+                                </div>
+                            </div>
+                            <div class="s-1">
+                                <div class="s-logo">
+                                    <img src="gambar/Unduh/038-app-store.png">
+                                </div>
+                                <div class="s-1-btn">
+                                    <a href="#"><span>UNDUH</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bawah">
+                        <h2>Jasa</h2>
+                        <p>Konsultasi Dokter Hewan</p>
+                        <p>Salon Hewan</p>
+                        <p>Penitipan Hewan</p>
+                        <p>Pelatihan Hewan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQuery -->
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+  
+        <!-- CDN SLICK -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+        <!-- Custom JS -->
+        <script src="javascript.js"></script>
+
+
+        <!-- <script>
+            var show = document.getElementById("navbar-link");
+            function openMenu(){
+                show.style.right = "0";
+            }
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+        </script> -->
+        <!-- <script type="text/javascript">
+            function toggleForm(){
+                var container = document.querySelector('.container');
+                 container.classList.toggle('active')
+            }
+        </script> -->
+
+    </body>
+</html>

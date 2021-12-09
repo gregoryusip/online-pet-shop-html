@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>VETSHOP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="homepagest.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="web">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <a href="homepage.html"><img src="gambar/logo331.png"></a>
+                </div>
+                <div class="navbar-link" id="navbar-link">
+                    <i class="fa fa-close" id="close" onclick="closeMenu()"></i>
+                    <ul>
+                        <a href="homepage.html"><li>HOME</li></a>
+                        <a href="shop.html"><li>SHOP</li></a>
+                        <a href="service.html"><li>SERVICE</li></a>
+                        <a href="premium.html"><li>PREMIUM</li></a>
+                    </ul>
+                    <div class="btn-kanan">
+                        <a href="login.html"><button type="button" class="btn" id="btn1">LOG IN</button></a>
+                        <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <!-- <button type="button" class="btn" id="btn2">SIGN UP</button> -->
+                </div>
+                <i class="fa fa-bars" id="open" onclick="openMenu()"></i>
+            </div>
+
+            <div class="content">
+                <div class="content-kiri">
+                    <div class="kiri-atas">
+                        <h1>Welcome To,</h1>
+                        <h2>VET<span>SHOP</span></h2>
+                        <p>Just Stay at Home!<br>
+                            We offer convenience in shopping for
+                            pet needs and ease in consulting with
+                            vetenarians.
+                        </p>
+                    </div>
+                    <div class="kiri-bawah">
+                        <h3>Explore:</h3>
+                        <button type="button" class="btnShop"><a href="shop.html">SHOP</a></button>
+                        <button type="button" class="btnConsult"><a href="service.html">SERVICE</a></button>
+                        <button type="button" class="btnPremium"><a href="premium.html">PREMIUM</a></button>
+                    </div>
+                </div>
+
+                <div class="content-kanan">
+                    <div class="kanan-atas">
+                        <i class="fa fa-quote-right"></i>
+                        <p>To fill your heart with love,
+                            just love an innocent animal.
+                        </p>
+                        <i class="fa fa-quote-left"></i>
+                        <p id="quoter">-Debasish Mridha</p>
+                    </div>
+                    <div class="kanan-bawah">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var show = document.getElementById("navbar-link");
+            function openMenu(){
+                show.style.right = "0";
+            }
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
